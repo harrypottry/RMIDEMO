@@ -1,4 +1,4 @@
-package com.gupaoedu.rmi.rpc;
+package com.test.rmi.rpc;
 
 import java.io.IOException;
 import java.net.ServerSocket;
@@ -7,9 +7,7 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
 /**
- * 腾讯课堂搜索 咕泡学院
- * 加群获取视频：608583947
- * 风骚的Michael 老师
+ * @author harry
  *
  * 用于发布一个远程服务
  */

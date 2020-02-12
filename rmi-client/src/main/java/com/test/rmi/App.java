@@ -1,4 +1,4 @@
-package com.gupaoedu.rmi;
+package com.test.rmi;
 
 /**
  * Hello world!

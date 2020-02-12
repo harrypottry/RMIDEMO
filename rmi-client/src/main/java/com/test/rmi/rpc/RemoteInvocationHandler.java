@@ -1,12 +1,10 @@
-package com.gupaoedu.rmi.rpc;
+package com.test.rmi.rpc;
 
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;
 
 /**
- * 腾讯课堂搜索 咕泡学院
- * 加群获取视频：608583947
- * 风骚的Michael 老师
+ * @author harry
  */
 public class RemoteInvocationHandler implements InvocationHandler {
     private String host;

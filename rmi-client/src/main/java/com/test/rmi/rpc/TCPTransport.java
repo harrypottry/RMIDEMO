@@ -1,4 +1,4 @@
-package com.gupaoedu.rmi.rpc;
+package com.test.rmi.rpc;
 
 import java.io.IOException;
 import java.io.ObjectInputStream;
@@ -6,9 +6,7 @@ import java.io.ObjectOutputStream;
 import java.net.Socket;
 
 /**
- * 腾讯课堂搜索 咕泡学院
- * 加群获取视频：608583947
- * 风骚的Michael 老师
+ * @author harry
  */
 public class TCPTransport {
 

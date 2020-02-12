@@ -1,12 +1,10 @@
-package com.gupaoedu.rmi;
+package com.test.rmi;
 
 import java.rmi.Remote;
 import java.rmi.RemoteException;
 
 /**
- * 腾讯课堂搜索 咕泡学院
- * 加群获取视频：608583947
- * 风骚的Michael 老师
+ * @author harry
  */
 public interface IHelloService extends Remote {
 
