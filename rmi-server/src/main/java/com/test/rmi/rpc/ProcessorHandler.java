@@ -15,7 +15,8 @@ import java.net.Socket;
 public class ProcessorHandler implements Runnable{
 
     private Socket socket;
-    private Object service; //服务端发布的服务
+    //服务端发布的服务
+    private Object service;
 
     public ProcessorHandler(Socket socket, Object service) {
         this.socket = socket;
@@ -31,7 +32,8 @@ public class ProcessorHandler implements Runnable{
             inputStream=new ObjectInputStream(socket.getInputStream());
             //反序列化远程传输的对象RpcRequest
             RpcRequest request=(RpcRequest) inputStream.readObject();
-            Object result=invoke(request); //通过反射去调用本地的方法
+            //通过反射去调用本地的方法
+            Object result=invoke(request);
 
             //通过输出流讲结果输出给客户端
             ObjectOutputStream outputStream=new ObjectOutputStream(socket.getOutputStream());

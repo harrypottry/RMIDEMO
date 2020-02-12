@@ -18,10 +18,13 @@ public class RpcServer {
     public void publisher(final Object service,int port){
         ServerSocket serverSocket=null;
         try{
-            serverSocket=new ServerSocket(port);  //启动一个服务监听
+            //启动一个服务监听
+            serverSocket=new ServerSocket(port);
 
-            while(true){ //循环监听
-                Socket socket=serverSocket.accept(); //监听服务
+            //循环监听
+            while(true){
+                //监听服务
+                Socket socket=serverSocket.accept();
                 //通过线程池去处理请求
                 executorService.execute(new ProcessorHandler(socket,service));
             }

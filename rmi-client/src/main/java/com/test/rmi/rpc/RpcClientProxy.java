@@ -7,7 +7,6 @@ import java.lang.reflect.Proxy;
  */
 public class RpcClientProxy {
 
-
     /**
      * 创建客户端的远程代理。通过远程代理进行访问
      * @param interfaceCls
@@ -23,8 +22,4 @@ public class RpcClientProxy {
         return (T)Proxy.newProxyInstance(interfaceCls.getClassLoader(),
                 new Class[]{interfaceCls},new RemoteInvocationHandler(host,port));
     }
-
-
-
-
 }
